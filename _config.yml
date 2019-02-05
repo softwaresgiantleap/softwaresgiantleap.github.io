@@ -1,0 +1,19 @@
+name: "Software's Giant Leap"
+description: "The story of how the Apollo missions changed software"
+meta_description: "and software changes the Apollo missions"
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+
+logo: false
+baseurl: /
+domain_name: 'https://softwaresgiantleap.com'
+google_analytics: 'UA-60067944-1'
+
+# Details for the RSS feed generator
+url:            'https://softwaresgiantleap.com'
+author:         'Joe Kutner'

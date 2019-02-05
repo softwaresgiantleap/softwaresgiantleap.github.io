@@ -1,1 +1,102 @@
-hello
+---
+layout: default
+title: Home
+about: 'about.html'
+cover: assets/images/moon_cover.png
+---
+
+<header class="main-header {% if page.cover %}" style="height:400px; background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+    <nav class="main-nav overlay clearfix">
+            {% if page.logo %}
+                <a class="blog-logo" href="{{ site.baseurl }}">
+                    <img src="{{ page.logo }}" alt="Blog Logo" />
+                </a>
+            {% endif %}
+        <a class="subscribe-button icon-feed" href="{{ site.baseurl }}/rss.xml">Subscribe</a>
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{ site.name }}</h1>
+            <h2 class="page-description">
+                {% if site.description %} {{ site.description }}. {% endif %}
+            </h2>
+        </div>
+    </div>
+</header>
+
+<main id="content" class="content" role="main">
+
+    <article class="post">
+      <section class="post-excerpt">
+          <p>
+            The software that guided humans to the Moon was one of the greatest innovations developed during the Apollo program.
+            It introduced concepts still reflected in modern operating systems and programming languages like Linux and Python.
+          </p>
+      </section>
+      <br />
+      <section class="post-excerpt">
+          <p>
+            In this series, we'll explore the software of the Apollo Guidance Computer.
+            You'll learn how it worked, how to debug it, and how it influenced modern
+            software. It may even change the way you think about the computer you're reading these words on.
+          </p>
+      </section>
+    </article>
+
+    <article class="post">
+        <footer class="post-meta">
+            Part 1
+        </footer>
+        <header class="post-header">
+            <h2 class="post-title"><a href="#">The Software that Saved Apollo 11</a></h2>
+        </header>
+        <section class="post-excerpt">
+            <p>
+              While Neil Armstrong was taking his first small steps onto the Moon, a group of software engineers in
+              Cambridge, MA were frantically debugging two alarms triggered during the Apollo 11 landing. NASA wanted
+              to know what had gone wrong and needed an answer before the Lunar Module (LM) was scheduled to lift off
+              the Moon's surface only a few hours later.
+            </p>
+            <a class="read-more" href="#">&raquo;</a>
+        </section>
+    </article>
+
+    <article class="post">
+        <footer class="post-meta">
+            Part 2
+        </footer>
+        <header class="post-header">
+            <h2 class="post-title"><a href="#">Debugging the Apollo Guidance Computer</a></h2>
+        </header>
+        <section class="post-excerpt">
+            <p>
+              You'll learn how to run the Apollo Guidance Computer software in an emulator and debug some simple actions.
+              These tools will prepare you to investigate the alarms that were triggered during the Apollo 11 lunar descent.
+            </p>
+            <a class="read-more" href="#">&raquo;</a>
+        </section>
+    </article>
+
+    <article class="post">
+        <footer class="post-meta">
+            Part 3
+        </footer>
+        <header class="post-header">
+            <h2 class="post-title"><a href="#">A Look Inside Apollo's Revolutionary Operating System</a></h2>
+        </header>
+        <section class="post-excerpt">
+            <p>
+              In this post, you'll learn how the AGC operating system handled interrupts with mechanisms that are still in use today.
+              We'll get to the bottom of the Apollo 11 alarms, and then look at what modern operating systems like Linux have borrowed from the Apollo Guidance Computer.
+            </p>
+            <a class="read-more" href="#">&raquo;</a>
+        </section>
+    </article>
+
+    <div style="text-align:center">
+      <h3 class="page-description">
+          {% if page.about %} <a href='{{ site.baseurl }}/{{ page.about }}'>About the Author</a> {% endif %}
+      </h3>
+    </div>
+
+</main>
