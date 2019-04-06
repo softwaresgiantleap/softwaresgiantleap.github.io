@@ -11,9 +11,9 @@ kramdown:
 
 logo: false
 baseurl: /
-domain_name: 'https://softwaresgiantleap.com'
-google_analytics: 'UA-60067944-1'
+domain_name: 'https://softwaresgiantleap.github.io'
+google_analytics: 'UA-60067944-2'
 
 # Details for the RSS feed generator
-url:            'https://softwaresgiantleap.com'
+url:            'https://softwaresgiantleap.github.io'
 author:         'Joe Kutner'
