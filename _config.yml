@@ -1,6 +1,6 @@
 name: "Software's Giant Leap"
 description: "The story of how the Apollo missions changed software"
-meta_description: "and software changes the Apollo missions"
+meta_description: "The software that guided humans to the Moon was one of the greatest innovations developed during the Apollo program. It introduced concepts still reflected in modern operating systems and programming languages like Linux and Python."
 
 highlighter: rouge
 markdown: kramdown
